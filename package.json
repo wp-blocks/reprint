@@ -1,0 +1,42 @@
+{
+  "name": "@wp-blocks/reprint",
+  "version": "0.1.0",
+  "description": "An unified plugin experiment for WordPress Gutenberg blocks",
+  "license": "GPL-2.0-or-later",
+  "contributors": [
+    "John Hooks <bitmachina@outlook.com> (https://johnhooks.io/)"
+  ],
+  "homepage": "https://github.com/wp-blocks/reprint#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wp-blocks/reprint.git"
+  },
+  "bugs": "https://github.com/wp-blocks/reprint/issues",
+  "keywords": [
+    "unified",
+    "gutenberg",
+    "blocks",
+    "parse",
+    "stringify"
+  ],
+  "type": "module",
+  "source": "./src/index.ts",
+  "module": "./dist/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node --loader ts-node/esm src/index.ts"
+  },
+  "author": "John Hooks <bitmachina@outlook.com> (https://johnhooks.io/)",
+  "dependencies": {
+    "rehype-parse": "^8.0.4",
+    "rehype-stringify": "^9.0.3",
+    "unified": "^10.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  }
+}
