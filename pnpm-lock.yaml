@@ -2,20 +2,24 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^18.15.0
+  prettier: ^2.8.4
   rehype-parse: ^8.0.4
   rehype-stringify: ^9.0.3
   ts-node: ^10.9.1
   tslib: ^2.5.0
   typescript: ^4.9.5
   unified: ^10.1.2
+  unist-util-visit: ^4.1.2
 
 dependencies:
   rehype-parse: 8.0.4
   rehype-stringify: 9.0.3
   unified: 10.1.2
+  unist-util-visit: 4.1.2
 
 devDependencies:
   '@types/node': 18.15.0
+  prettier: 2.8.4
   ts-node: 10.9.1_lwgqdwokjtwlohdqtbb6s252kq
   tslib: 2.5.0
   typescript: 4.9.5
@@ -223,6 +227,12 @@ packages:
   /parse5/6.0.1:
     resolution: {integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==}
     dev: false
+
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
 
   /property-information/6.2.0:
     resolution: {integrity: sha512-kma4U7AFCTwpqq5twzC1YVIDXSqg6qQK6JN0smOw8fgRy1OkMi0CYSzFmsy6dnqSenamAtj0CyXMUJ1Mf6oROg==}
