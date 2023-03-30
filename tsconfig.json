@@ -1,9 +1,15 @@
 {
 	"compilerOptions": {
 		"target": "ES2020",
-		"module": "NodeNext",
+    "lib": ["ES2020"],
+		"module": "Node16",
 		"outDir": "./dist",
-		"skipLibCheck": true
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+		"skipLibCheck": true,
+    "declaration": true,
+    "emitDeclarationOnly": true
 	},
-	"include": ["./src/**/*"]
+	"include": ["lib/**/*.js", "index.d.ts"]
 }

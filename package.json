@@ -1,5 +1,5 @@
 {
-	"name": "@wp-blocks/reprint",
+	"name": "reprint",
 	"version": "0.1.0",
 	"description": "An unified plugin experiment for WordPress Gutenberg blocks",
 	"license": "GPL-2.0-or-later",
@@ -19,23 +19,33 @@
 		"parse",
 		"stringify"
 	],
-	"type": "module",
-	"source": "./src/index.ts",
-	"module": "./dist/index.js",
 	"sideEffects": false,
+	"type": "module",
+	"source": "./index.js",
+	"module": "./index.js",
+	"main": "./index.js",
+	"types": "/index.d.ts",
+	"files": [
+		"lib/",
+		"index.d.ts",
+		"index.js"
+	],
 	"scripts": {
 		"build": "tsc -b",
-		"start": "node --loader ts-node/esm src/index.ts"
+		"start": "node index.js"
 	},
 	"author": "John Hooks <bitmachina@outlook.com> (https://johnhooks.io/)",
 	"dependencies": {
+		"hast-util-select": "^5.0.5",
 		"rehype-parse": "^8.0.4",
 		"rehype-stringify": "^9.0.3",
 		"unified": "^10.1.2",
 		"unist-util-visit": "^4.1.2"
 	},
 	"devDependencies": {
+		"@types/hast": "^2.3.4",
 		"@types/node": "^18.15.0",
+		"@types/unist": "^2.0.6",
 		"prettier": "^2.8.4",
 		"ts-node": "^10.9.1",
 		"tslib": "^2.5.0",
