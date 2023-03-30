@@ -1,5 +1,5 @@
 {
-	"name": "reprint",
+	"name": "@wp-blocks/reprint",
 	"version": "0.1.0",
 	"description": "An unified plugin experiment for WordPress Gutenberg blocks",
 	"license": "GPL-2.0-or-later",
